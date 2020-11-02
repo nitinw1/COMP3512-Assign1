@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <title>COMP 3512 </title>
+        <link rel="stylesheet" href="./css/style.css">
+
+
+    </head>
+
+    <body class="container">
+
+        <div class="header">
+            <h2>COMP 3512 Assign 1</h2>
+            <h3>Nitin & Hudson </h3>
+            <button class="toogleButton">Toogle Gallaries On/Off</button>
+        </div>
+
+
+        <section class="mainContainer">
+
+
+            <section class="defaultView">
+
+                <div class="galleryList">
+                    <div class="listGallery">
+                        <h4> List of Gallaries</h4>
+
+                        <nav>
+                            <ul id="glist" class="listGallaries" role="listbox"></ul>
+                        </nav>
+                    </div>
+
+                </div>
+                <div class="gallaryInformation">
+                    <div class="galleryInfo">
+                        <h4>Gallery Info</h4>
+                        <ul id="galleryLoad"></ul>
+                        <ul id="galleryInfo">
+                            <h6>Gallery Name<li id="gName"></li></h6>
+                            <h6>Native Galllery Name<li id="nativeName"></li></h6>
+                            <h6>Gallery City<li id="gCity"></li></h6>
+                            <h6>Gallery Address <li id="gAddress"></li></h6>
+                            <h6>Gallery Country <li id="gCountry"></li></h6>
+                            <h6>Gallery Website<li><a id="gWebsite"></a></li></h6>
+                        </ul>
+                    </div>
+                    <div class="map">
+                        <p>Map</p>
+                    </div>
+                </div>
+                <div class="paintings">
+                    <div id="paintingBox">
+                        <table id="myTable">
+
+                            <caption><h4>Paintings</h4></caption>
+                            <thead>
+                                <tr><th></th><th>Artist</th><th>Title</th><th>Year</th></tr>
+                            </thead>
+                            <tbody id="paintingsTable">
+
+                            </tbody>
+                        </table>
+                    </div> 
+                </div>
+            </section>
+            <section class="singlePaintingView">
+                <div id="singlePaintingBox">
+                    <table>
+                        <thead>
+                            <tr><th id="singlePImg"></th><th id="ptitle"></th></tr>
+                        </thead>
+                        <tbody id="singlePaintingTable">
+                            <tr><td><img id ="bigPainting">
+                                <div id="myModal" class="modal">
+                                    <span class="close">&times;</span> 
+                                    <img class="modal-content" id="img01">
+                                </div></td>
+
+
+
+
+                                <td id="singlePUl">
+                                    <ul>
+
+                                    </ul>
+                                    <button id="closeB" type="reset">Close</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </section>
+        </section>
+    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7r3wP5HORQIyJh0y4kBpydESyNkshPR4&callback" async defer>
+    </script>
+    <script src="js/code.js"></script>
+
+</html>
+
